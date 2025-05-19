@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Workout Tracker
+
+A Next.js application for tracking workout progress with a database backend.
+
+## Features
+
+- Track exercises, sets, reps, weights, and notes for each workout
+- Weekly workout organization with pre-defined templates
+- Edit exercise details and customize workouts
+- Add and remove exercises from your workout days
+- Import and export workouts via JSON
+- Data persistence with Prisma ORM and database storage
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ and npm
+- PostgreSQL database or SQLite (configured by default for easy development)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. The project is configured to use SQLite by default for easy development. 
+   If you want to use PostgreSQL, update the connection string in `.env`
+
+4. Run database migrations:
+   ```bash
+   npx prisma migrate dev
+   ```
+
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Importing and Exporting Workouts
+
+This application supports importing and exporting workouts via JSON:
+
+1. **Exporting**: Click the "Export" button to download your current week's workout data as a JSON file
+2. **Importing**: Click the "Import" button and select a properly formatted JSON file to bulk-import workout data
+3. Need help? Click "Download Template" in the import dialog to get a sample format
+
+## Database Schema
+
+- **User**: Stores user information
+- **Workout**: Represents a workout session for a specific day and week
+- **Exercise**: Contains the details of each exercise in a workout
+
+## Technologies
+
+- Next.js 15
+- React 19
+- Prisma ORM
+- SQLite/PostgreSQL
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Prisma Documentation](https://www.prisma.io/docs)
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
