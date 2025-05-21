@@ -225,6 +225,7 @@ export default function WorkoutTrackerApp(): JSX.Element {
 
   // Store the timeout ID at component level to manage debounced saves
   const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const pendingSaveDataRef = useRef<{ day: number; exercises: ExerciseEntry[] } | null>(null);
   
   const handleChange = (
     day: number,
@@ -250,11 +251,48 @@ export default function WorkoutTrackerApp(): JSX.Element {
     }
     
     // Debounced save to prevent too many API calls
+    // Store pending data
+    pendingSaveDataRef.current = { day, exercises: updatedExercises };
+    
     saveTimeoutRef.current = setTimeout(() => {
-      saveWorkout(day, updatedExercises);
+      if (pendingSaveDataRef.current) {
+        saveWorkout(pendingSaveDataRef.current.day, pendingSaveDataRef.current.exercises);
+        pendingSaveDataRef.current = null;
+      }
       saveTimeoutRef.current = null;
     }, 1000);
   };
+
+  const flushPendingSave = () => {
+    if (pendingSaveDataRef.current && saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current);
+      saveWorkout(pendingSaveDataRef.current.day, pendingSaveDataRef.current.exercises);
+      pendingSaveDataRef.current = null;
+      saveTimeoutRef.current = null;
+      console.log('Flushed pending save.');
+    }
+  };
+
+  // Effect for handling visibility change and beforeunload
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        flushPendingSave();
+      }
+    };
+
+    const handleBeforeUnload = () => {
+      flushPendingSave();
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []); // Empty dependency array ensures this runs only on mount and unmount
 
   const addWeek = async () => {
     if (!user) return;
