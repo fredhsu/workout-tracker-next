@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
   try {
     // Parse request body
     const body = await request.json();
-    const { userId, data } = body;
+    const { userId, data, targetWeek } = body;
 
     if (!userId) {
       return NextResponse.json(
@@ -32,7 +32,10 @@ export async function POST(request: NextRequest) {
     }
 
     const importData = data as WorkoutImportData;
-    const { weekNumber, days } = importData;
+    const { days } = importData;
+    
+    // Use targetWeek from request instead of weekNumber from import data
+    const weekNumber = targetWeek || importData.weekNumber;
 
     // Process each day's workouts in parallel using Promise.all
     const importPromises = Object.entries(days).map(async ([dayKey, exercises]) => {
@@ -103,7 +106,7 @@ export async function POST(request: NextRequest) {
       success: true,
       message: 'Workouts imported successfully',
       results,
-      weekNumber: importData.weekNumber, // Return the imported week number
+      weekNumber: weekNumber, // Return the actual imported week number
       dayCount: Object.keys(importData.days).length, // Return number of days imported 
       processedDays: results.length, // How many days were actually processed
     });

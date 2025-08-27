@@ -5,7 +5,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from '@/components/ui/moda
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import FileUpload from '@/components/FileUpload';
-import { WorkoutImportData, generateImportTemplate } from '@/lib/validators';
+import { generateImportTemplate } from '@/lib/validators';
 import { User } from '@/lib/types';
 
 interface ImportModalProps {
@@ -13,13 +13,15 @@ interface ImportModalProps {
   onClose: () => void;
   onImportComplete: () => void;
   user: User | null;
+  currentWeek: number;
 }
 
 export default function ImportModal({ 
   isOpen, 
   onClose, 
   onImportComplete,
-  user 
+  user,
+  currentWeek
 }: ImportModalProps) {
   const [isImporting, setIsImporting] = useState(false);
   const [fileContent, setFileContent] = useState<string | null>(null);
@@ -51,6 +53,7 @@ export default function ImportModal({
         body: JSON.stringify({
           userId: user.id,
           data: parsedContent,
+          targetWeek: currentWeek,
         }),
       });
       
@@ -71,7 +74,7 @@ export default function ImportModal({
       });
       
       // Store important information from the result
-      const importedWeekNumber = result.weekNumber;
+      const _importedWeekNumber = result.weekNumber;
       
       // After successful import, wait a moment then close modal and update
       setTimeout(() => {
