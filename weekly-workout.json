@@ -1,0 +1,186 @@
+{
+  "weekNumber": 1,
+  "days": {
+    "1": [
+      {
+        "name": "Goblet Squat",
+        "sets": 4,
+        "reps": "8",
+        "weight": "Heavy DB/KB",
+        "note": "Keep torso upright"
+      },
+      {
+        "name": "Hip Thrust (barbell or bodyweight)",
+        "sets": 3,
+        "reps": "10–12",
+        "weight": "",
+        "note": "Squeeze glutes at top"
+      },
+      {
+        "name": "Dumbbell Step-Ups",
+        "sets": 3,
+        "reps": "8 / leg",
+        "weight": "Moderate DBs",
+        "note": "Control the descent"
+      },
+      {
+        "name": "Bulgarian Split Squat",
+        "sets": 3,
+        "reps": "8 / leg",
+        "weight": "Bodyweight or light DBs",
+        "note": "Elevate rear foot"
+      },
+      {
+        "name": "Pallof Press",
+        "sets": 3,
+        "reps": "10 / side",
+        "weight": "Resistance Band",
+        "note": "Anti-rotation core"
+      }
+    ],
+    "2": [
+      {
+        "name": "VO₂-Max Intervals (4 × 4 min @ 90–95% HRmax)",
+        "sets": 4,
+        "reps": "4 min",
+        "weight": "",
+        "note": "3 min easy recovery between"
+      },
+      {
+        "name": "Post-HIIT Mobility & Stretch",
+        "sets": 1,
+        "reps": "20 min",
+        "weight": "",
+        "note": ""
+      }
+    ],
+    "3": [
+      {
+        "name": "Incline Dumbbell Press",
+        "sets": 3,
+        "reps": "8–10",
+        "weight": "Moderate",
+        "note": ""
+      },
+      {
+        "name": "Chest-Supported Dumbbell Row",
+        "sets": 3,
+        "reps": "8–10",
+        "weight": "Moderate",
+        "note": "Avoid spinal loading"
+      },
+      {
+        "name": "Assisted Pull-Ups",
+        "sets": 3,
+        "reps": "6–10",
+        "weight": "",
+        "note": "Use band or machine as needed"
+      },
+      {
+        "name": "Lateral Raise",
+        "sets": 3,
+        "reps": "12–15",
+        "weight": "Light",
+        "note": "Control each rep"
+      },
+      {
+        "name": "Single-Leg Romanian Deadlift (KB or DB)",
+        "sets": 2,
+        "reps": "8 / leg",
+        "weight": "Light",
+        "note": "Keep spine neutral"
+      },
+      {
+        "name": "Dead Bug",
+        "sets": 3,
+        "reps": "10 / side",
+        "weight": "",
+        "note": "Control limbs"
+      }
+    ],
+    "4": [
+      {
+        "name": "Box Jump",
+        "sets": 3,
+        "reps": "5",
+        "weight": "",
+        "note": "Focus on explosive takeoff"
+      },
+      {
+        "name": "Kettlebell Swing",
+        "sets": 3,
+        "reps": "15",
+        "weight": "Moderate",
+        "note": "Hip hinge, not a squat"
+      },
+      {
+        "name": "Medicine Ball Slam",
+        "sets": 3,
+        "reps": "8–10",
+        "weight": "6–10 kg",
+        "note": ""
+      },
+      {
+        "name": "Push Press",
+        "sets": 3,
+        "reps": "5",
+        "weight": "Light-Moderate",
+        "note": "Drive with hips"
+      },
+      {
+        "name": "Agility Ladder Drill",
+        "sets": 3,
+        "reps": "1 min",
+        "weight": "",
+        "note": "Quick footwork"
+      },
+      {
+        "name": "Single-Leg Balance Hold",
+        "sets": 3,
+        "reps": "30 s / leg",
+        "weight": "",
+        "note": "Add cushion for difficulty"
+      },
+      {
+        "name": "Lateral Bound (Skater Jump)",
+        "sets": 3,
+        "reps": "5 / side",
+        "weight": "",
+        "note": "Stick the landing"
+      }
+    ],
+    "5": [
+      {
+        "name": "Steady-State Cardio (Run or Bike)",
+        "sets": 1,
+        "reps": "45–60 min",
+        "weight": "",
+        "note": "Zone 2, 65–75% HRmax"
+      },
+      {
+        "name": "Cooldown Stretch",
+        "sets": 1,
+        "reps": "5 min",
+        "weight": "",
+        "note": ""
+      }
+    ],
+    "6": [
+      {
+        "name": "Yoga / Mobility Flow",
+        "sets": 1,
+        "reps": "30–40 min",
+        "weight": "",
+        "note": ""
+      },
+      {
+        "name": "Balance + Core Stability",
+        "sets": 1,
+        "reps": "10–15 min",
+        "weight": "",
+        "note": ""
+      }
+    ],
+    "7": []
+  }
+}
