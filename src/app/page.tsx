@@ -1,4 +1,4 @@
-import WorkoutTrackerApp from '@/components/WorkoutTrackerApp.tsx'
+import WorkoutTrackerApp from '@/components/WorkoutTrackerApp'
 import Image from "next/image";
 
 export default function Home() {

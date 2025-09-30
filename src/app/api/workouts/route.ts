@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
         where: { id: existingWorkout.id },
         data: {
           exercises: {
-            create: exercises.map(({ id, workoutId, ...rest }) => rest),
+            create: exercises.map(({ id, workoutId, ...rest }: any) => rest),
           },
         },
         include: {
@@ -96,7 +96,7 @@ export async function POST(request: NextRequest) {
         weekNumber,
         dayNumber,
         exercises: {
-          create: exercises.map(({ id, workoutId, ...rest }) => rest),
+          create: exercises.map(({ id, workoutId, ...rest }: any) => rest),
         },
       },
       include: {

@@ -46,11 +46,12 @@ const defaultTemplate: Record<number, Array<{ name: string; sets: number; reps: 
   6: [{ name: 'Zone 2 Cardio', sets: 1, reps: '45-60 min', note: '' }]
 };
 
-export default function WorkoutTrackerApp(): JSX.Element {
+export default function WorkoutTrackerApp(): React.JSX.Element {
   const [currentWeek, setCurrentWeek] = useState<number>(1);
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [workouts, setWorkouts] = useState<Record<number, Record<number, ExerciseEntry[]>>>({});
+  const [isAddingWeek, setIsAddingWeek] = useState<boolean>(false);
   
   // For exercise editing
   const [isExerciseModalOpen, setIsExerciseModalOpen] = useState<boolean>(false);
@@ -155,10 +156,12 @@ export default function WorkoutTrackerApp(): JSX.Element {
         // Complete replacement of the state to ensure clean update
         setWorkouts(formattedWorkouts);
         
-        // If there are workouts, always set current week to the latest one (reverse chronological order)
+        // If there are workouts, set current week to the latest one unless we're adding a week
         const latestWeek = Math.max(...Object.keys(formattedWorkouts).map(Number));
-        console.log('Setting current week to latest (reverse order):', latestWeek);
-        setCurrentWeek(latestWeek);
+        if (!isAddingWeek) {
+          console.log('Setting current week to latest (reverse order):', latestWeek);
+          setCurrentWeek(latestWeek);
+        }
         
         if (currentWeek !== latestWeek) {
           // Check if the imported week exists and automatically switch to it if needed
@@ -183,22 +186,24 @@ export default function WorkoutTrackerApp(): JSX.Element {
   };
 
   // Save workout data
-  const saveWorkout = async (day: number, exercises: ExerciseEntry[]) => {
+  const saveWorkout = async (day: number, exercises: ExerciseEntry[], weekNumber?: number) => {
     if (!user) return;
+    
+    const targetWeek = weekNumber ?? currentWeek;
     
     try {
       console.log('Saving workout:', { 
         userId: user.id, 
-        weekNumber: currentWeek, 
+        weekNumber: targetWeek, 
         dayNumber: day,
         exerciseCount: exercises.length
       });
       
       const payload = {
         userId: user.id,
-        weekNumber: currentWeek,
+        weekNumber: targetWeek,
         dayNumber: day,
-        exercises: exercises.map(({ id, workoutId, ...rest }) => rest)
+        exercises: exercises.map(({ id, workoutId, ...rest }: any) => rest)
       };
       
       console.log('Payload:', payload);
@@ -223,8 +228,8 @@ export default function WorkoutTrackerApp(): JSX.Element {
       // Update local state
       setWorkouts(prev => ({
         ...prev,
-        [currentWeek]: {
-          ...prev[currentWeek],
+        [targetWeek]: {
+          ...prev[targetWeek],
           [day]: savedWorkout.exercises,
         },
       }));
@@ -272,8 +277,14 @@ export default function WorkoutTrackerApp(): JSX.Element {
     const next = currentWeek + 1;
     console.log('Adding new week:', next);
     
+    // Set flag to prevent loadWorkouts from interfering
+    setIsAddingWeek(true);
+    
     // Create empty workouts for the new week with the default template
     const newWeekWorkouts: Record<number, ExerciseEntry[]> = {};
+    
+    // First update the current week immediately
+    setCurrentWeek(next);
     
     // For each day, set up default exercises
     for (let day = 1; day <= 6; day++) {
@@ -294,20 +305,22 @@ export default function WorkoutTrackerApp(): JSX.Element {
       newWeekWorkouts[day] = exercises;
       
       try {
-        // Save each day to the database
-        await saveWorkout(day, exercises);
+        // Save each day to the database for the new week
+        await saveWorkout(day, exercises, next);
       } catch (error) {
         console.error(`Error saving workout for day ${day}:`, error);
       }
     }
     
-    // Update local state immediately to ensure UI shows exercises
+    // Update local state to ensure UI shows exercises
     setWorkouts(prev => ({
       ...prev,
       [next]: newWeekWorkouts,
     }));
     
-    setCurrentWeek(next);
+    // Clear the adding week flag
+    setIsAddingWeek(false);
+    
     console.log('Week added successfully:', next);
   };
 
@@ -627,10 +640,12 @@ export default function WorkoutTrackerApp(): JSX.Element {
           onClick={() => {
             const currentIndex = availableWeeks.indexOf(currentWeek);
             if (currentIndex < availableWeeks.length - 1) {
-              setCurrentWeek(availableWeeks[currentIndex + 1]);
+              const olderWeek = availableWeeks[currentIndex + 1];
+              console.log('Going to older week:', olderWeek);
+              setCurrentWeek(olderWeek);
             }
           }}
-          disabled={availableWeeks.indexOf(currentWeek) >= availableWeeks.length - 1}
+          disabled={availableWeeks.length <= 1 || availableWeeks.indexOf(currentWeek) >= availableWeeks.length - 1}
         >
           ← Older
         </Button>
@@ -641,10 +656,12 @@ export default function WorkoutTrackerApp(): JSX.Element {
           onClick={() => {
             const currentIndex = availableWeeks.indexOf(currentWeek);
             if (currentIndex > 0) {
-              setCurrentWeek(availableWeeks[currentIndex - 1]);
+              const newerWeek = availableWeeks[currentIndex - 1];
+              console.log('Going to newer week:', newerWeek);
+              setCurrentWeek(newerWeek);
             }
           }}
-          disabled={availableWeeks.indexOf(currentWeek) <= 0}
+          disabled={availableWeeks.length <= 1 || availableWeeks.indexOf(currentWeek) <= 0}
         >
           Newer →
         </Button>
