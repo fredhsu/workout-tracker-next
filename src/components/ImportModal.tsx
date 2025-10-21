@@ -53,7 +53,7 @@ export default function ImportModal({
         body: JSON.stringify({
           userId: user.id,
           data: parsedContent,
-          targetWeek: currentWeek,
+          // Don't pass targetWeek - let the API determine the next available week number
         }),
       });
       

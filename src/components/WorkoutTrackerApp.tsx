@@ -273,9 +273,11 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
 
   const addWeek = async () => {
     if (!user) return;
-    
-    const next = currentWeek + 1;
-    console.log('Adding new week:', next);
+
+    // Find the maximum week number and add 1 to ensure we create a new unique week
+    const maxWeek = Math.max(...Object.keys(workouts).map(Number), 0);
+    const next = maxWeek + 1;
+    console.log('Adding new week:', next, '(max existing week:', maxWeek, ')');
     
     // Set flag to prevent loadWorkouts from interfering
     setIsAddingWeek(true);

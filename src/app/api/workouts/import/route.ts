@@ -33,9 +33,24 @@ export async function POST(request: NextRequest) {
 
     const importData = data as WorkoutImportData;
     const { days } = importData;
-    
-    // Use targetWeek from request instead of weekNumber from import data
-    const weekNumber = targetWeek || importData.weekNumber;
+
+    // Calculate the next available week number if targetWeek is not provided
+    let weekNumber: number;
+    if (targetWeek) {
+      weekNumber = targetWeek;
+    } else {
+      // Find the maximum week number for this user and add 1
+      const existingWorkouts = await prisma.workout.findMany({
+        where: { userId },
+        select: { weekNumber: true },
+        orderBy: { weekNumber: 'desc' },
+        take: 1,
+      });
+
+      const maxWeek = existingWorkouts.length > 0 ? existingWorkouts[0].weekNumber : 0;
+      weekNumber = maxWeek + 1;
+      console.log('Auto-assigning week number:', weekNumber, '(max existing week:', maxWeek, ')');
+    }
 
     // Process each day's workouts in parallel using Promise.all
     const importPromises = Object.entries(days).map(async ([dayKey, exercises]) => {
