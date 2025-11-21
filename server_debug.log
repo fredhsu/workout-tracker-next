@@ -1,0 +1,64 @@
+
+> workout-tracker-next@0.1.0 dev
+> NODE_OPTIONS='--no-experimental-webstorage' next dev --turbopack
+
+ ⚠ Port 3000 is in use, using available port 3008 instead.
+   ▲ Next.js 15.3.1 (Turbopack)
+   - Local:        http://localhost:3008
+   - Network:      http://192.168.2.174:3008
+
+ ✓ Starting...
+ ✓ Ready in 532ms
+ ○ Compiling / ...
+ ✓ Compiled / in 860ms
+ HEAD / 200 in 979ms
+ GET / 200 in 25ms
+ ✓ Compiled /favicon.ico in 258ms
+ GET /api/auth?email=demo@example.com 200 in 302ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 341ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 442ms
+ ✓ Compiled /api/workouts in 154ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763707919984 200 in 182ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763707920485 200 in 14ms
+ POST /api/workouts 200 in 44ms
+ GET / 200 in 27ms
+ GET /api/auth?email=demo@example.com 200 in 17ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763707974015 200 in 13ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763707974516 200 in 14ms
+ POST /api/workouts 200 in 47ms
+ GET / 200 in 26ms
+ GET /api/auth?email=demo@example.com 200 in 23ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763708006657 200 in 13ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763708007158 200 in 13ms
+ GET / 200 in 24ms
+ GET /api/auth?email=demo@example.com 200 in 11ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763708176079 200 in 14ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763708176580 200 in 11ms
+ POST /api/workouts 200 in 40ms
+ GET / 200 in 17ms
+ GET /api/auth?email=demo@example.com 200 in 11ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710048955 200 in 13ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 213ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710049455 200 in 12ms
+ POST /api/workouts 200 in 38ms
+ POST /api/workouts 200 in 40ms
+ POST /api/workouts 200 in 42ms
+ POST /api/workouts 200 in 43ms
+ ✓ Compiled /api/workouts/import in 144ms
+Processing day: 1 with 8 exercises
+Processing day: 2 with 4 exercises
+Processing day: 3 with 6 exercises
+Processing day: 4 with 2 exercises
+Processing day: 5 with 6 exercises
+Processing day: 6 with 1 exercises
+Processing day: 7 with 1 exercises
+Import completed with 7 days processed
+ POST /api/workouts/import 200 in 616ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710067720 200 in 15ms
+ GET / 200 in 26ms
+ GET /api/auth?email=demo@example.com 200 in 15ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710067863 200 in 11ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 214ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710068363 200 in 11ms
+ POST /api/workouts 200 in 37ms
+ POST /api/workouts 200 in 48ms

@@ -1,0 +1,789 @@
+
+> workout-tracker-next@0.1.0 dev
+> NODE_OPTIONS='--no-experimental-webstorage' next dev --turbopack
+
+   ▲ Next.js 15.3.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.2.174:3000
+
+ ✓ Starting...
+ ✓ Ready in 541ms
+ ○ Compiling / ...
+ ✓ Compiled / in 848ms
+ HEAD / 200 in 975ms
+ GET / 200 in 26ms
+ ✓ Compiled /api/auth in 232ms
+ GET /api ✓ Compiled in 102ms
+e.com 200 in 286ms
+ ✓ Compiled /api/workouts in 157ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763689808351 200 in 177ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763689808852 200 in 15ms
+ GET / 200 in 22ms
+ GET /api/auth?email=demo@example.com 200 in 12ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763689861327 200 in 14ms
+ ✓ Compiled /favicon.ico in 158ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 372ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763689861828 200 in 15ms
+ ✓ Compiled in 99ms
+ ✓ Compiled / in 3ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'
+}
+ ✓ Compiled /_error in 434ms
+ ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /home/fred/nextjs/workout-tracker-next/.next/server/pages/_document.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/require.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/load-components.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/utils.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/swc/options.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/swc/index.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/config.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/next.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/lib/start-server.js
+    at Object.<anonymous> (.next/server/pages/_document.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ GET / 500 in 558ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /home/fred/nextjs/workout-tracker-next/.next/server/pages/_document.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/require.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/load-components.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/utils.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/swc/options.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/swc/index.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/config.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/next.js
+- /home/fred/nextjs/workout-tracker-next/node_modules/next/dist/server/lib/start-server.js
+    at Object.<anonymous> (.next/server/pages/_document.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ GET / 500 in 43ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/fred/nextjs/workout-tracker-next/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/fred/nextjs/workout-tracker-next/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ GET / 200 in 111ms
+ GET /api/auth?email=demo@example.com 200 in 15ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763709968305 200 in 15ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763709968805 200 in 13ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "f22523bf-aaac-4cd8-a93b-4cb664c37d18"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Back Squat",
+                sets: 3,
+                reps: "8-10",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.908Z",
+                updatedAt: "2025-11-21T01:09:05.908Z",
+                completed: true
+              },
+              {
+                name: "Bench Press",
+                sets: 3,
+                reps: "8-10",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.908Z",
+                updatedAt: "2025-11-21T01:09:05.908Z"
+              },
+              {
+                name: "Bent-Over Row",
+                sets: 3,
+                reps: "8-10",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.908Z",
+                updatedAt: "2025-11-21T01:09:05.908Z"
+              },
+              {
+                name: "Plank",
+                sets: 3,
+                reps: "30-45s",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.908Z",
+                updatedAt: "2025-11-21T01:09:05.908Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 67ms
+ GET / 200 in 24ms
+ GET /api/auth?email=demo@example.com 200 in 12ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763709987560 200 in 13ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763709988060 200 in 14ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "88b91e49-8d0d-45a9-bd78-ae3a26e981ea"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Dynamic Warm-Up",
+                sets: 1,
+                reps: "5–10 min",
+                weight: "",
+                note: "Easy bike or jump rope + leg swings, hip circles, arm circles, T-spine rotations, walking lunges",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z",
+                completed: true
+              },
+              {
+                name: "Kettlebell Swing (Power Primer)",
+                sets: 3,
+                reps: "10–15",
+                weight: "",
+                note: "Explosive hip drive, neutral spine; rest ~60s",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              },
+              {
+                name: "Jumping Bulgarian Split Squat (Bodyweight)",
+                sets: 3,
+                reps: "6–8 / leg",
+                weight: "",
+                note: "Explosive rear-foot-elevated jump; soft landing; knee tracks over toes; 60–90s rest",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              },
+              {
+                name: "Barbell Bench Press",
+                sets: 3,
+                reps: "5–8",
+                weight: "",
+                note: "Scapula retracted; feet planted; controlled bar path; SUPerset with Pull-Ups",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              },
+              {
+                name: "Pull-Ups (band-assisted if needed)",
+                sets: 3,
+                reps: "AMRAP (6–10 target)",
+                weight: "",
+                note: "Overhand grip; full ROM; controlled eccentric",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              },
+              {
+                name: "One-Arm DB Row (Bench-Supported)",
+                sets: 3,
+                reps: "10 / arm",
+                weight: "",
+                note: "Squeeze at top; avoid torso twist; neutral spine",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              },
+              {
+                name: "Goblet Squat (KB/DB)",
+                sets: 2,
+                reps: "10–12",
+                weight: "",
+                note: "Front-loaded; upright torso; depth with control (reduced volume to balance week)",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              },
+              {
+                name: "Cooldown Stretch",
+                sets: 1,
+                reps: "5–10 min",
+                weight: "",
+                note: "Quads, hamstrings, calves, chest, lats; slow breathing",
+                createdAt: "2025-11-05T04:21:24.837Z",
+                updatedAt: "2025-11-05T04:21:24.837Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 65ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "c3ce3931-48fd-4231-87a8-d5e7980cd650"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Deadlift",
+                sets: 3,
+                reps: "5-6",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z",
+                completed: true
+              },
+              {
+                name: "Overhead Press",
+                sets: 3,
+                reps: "6-8",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              },
+              {
+                name: "Pull-Ups/Chin-Ups",
+                sets: 3,
+                reps: "AMRAP 6-10",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              },
+              {
+                name: "Walking Lunges",
+                sets: 3,
+                reps: "8-10 per leg",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              },
+              {
+                name: "Hanging Leg Raises",
+                sets: 3,
+                reps: "10-15",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 55ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "c3ce3931-48fd-4231-87a8-d5e7980cd650"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Deadlift",
+                sets: 3,
+                reps: "5-6",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z",
+                completed: true
+              },
+              {
+                name: "Overhead Press",
+                sets: 3,
+                reps: "6-8",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z",
+                completed: true
+              },
+              {
+                name: "Pull-Ups/Chin-Ups",
+                sets: 3,
+                reps: "AMRAP 6-10",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              },
+              {
+                name: "Walking Lunges",
+                sets: 3,
+                reps: "8-10 per leg",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              },
+              {
+                name: "Hanging Leg Raises",
+                sets: 3,
+                reps: "10-15",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 32ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "c3ce3931-48fd-4231-87a8-d5e7980cd650"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Deadlift",
+                sets: 3,
+                reps: "5-6",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z",
+                completed: true
+              },
+              {
+                name: "Overhead Press",
+                sets: 3,
+                reps: "6-8",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z",
+                completed: true
+              },
+              {
+                name: "Pull-Ups/Chin-Ups",
+                sets: 3,
+                reps: "AMRAP 6-10",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z",
+                completed: true
+              },
+              {
+                name: "Walking Lunges",
+                sets: 3,
+                reps: "8-10 per leg",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              },
+              {
+                name: "Hanging Leg Raises",
+                sets: 3,
+                reps: "10-15",
+                weight: "",
+                note: "",
+                createdAt: "2025-11-21T01:09:05.987Z",
+                updatedAt: "2025-11-21T01:09:05.987Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 33ms
+ ✓ Compiled /api/workouts/import in 143ms
+Processing day: 1 with 8 exercises
+Processing day: 2 with 4 exercises
+Processing day: 3 with 6 exercises
+Processing day: 4 with 2 exercises
+Processing day: 5 with 6 exercises
+Processing day: 6 with 1 exercises
+Processing day: 7 with 1 exercises
+Import completed with 7 days processed
+ POST /api/workouts/import 200 in 403ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710022774 200 in 22ms
+ GET / 200 in 25ms
+ GET /api/auth?email=demo@example.com 200 in 14ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710022902 200 in 11ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 213ms
+ GET /api/workouts?userId=0001dd2e-6924-4b2d-8454-8ce8dda41c04&_=1763710023402 200 in 12ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "f22523bf-aaac-4cd8-a93b-4cb664c37d18"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Warm-up: Jump Rope",
+                sets: 1,
+                reps: "3 min",
+                weight: "",
+                note: "Light intensity to elevate heart rate.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z",
+                completed: true
+              },
+              {
+                name: "Warm-up: World's Greatest Stretch",
+                sets: 1,
+                reps: "5 per side",
+                weight: "",
+                note: "Mobility flow.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Warm-up: Pogo Hops",
+                sets: 3,
+                reps: "10",
+                weight: "",
+                note: "Stiff-legged ankle bounces to prep Achilles.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Landmine Press OR Barbell Overhead Press",
+                sets: 3,
+                reps: "6-8",
+                weight: "",
+                note: "Superset 1A: Heavy & Strict",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Single-Arm Dumbbell Snatch",
+                sets: 3,
+                reps: "5 per arm",
+                weight: "",
+                note: "Superset 1B: Explosive. No rest after 1A. Rest 90s after 1B.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Barbell Romanian Deadlift (RDL)",
+                sets: 3,
+                reps: "8",
+                weight: "",
+                note: "Superset 2A: Keep bar close, do not round back.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Standing Broad Jumps",
+                sets: 3,
+                reps: "3-5",
+                weight: "",
+                note: "Superset 2B: Jump for distance, stick landing. Rest 2 mins after.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Kettlebell Swings",
+                sets: 5,
+                reps: "15",
+                weight: "",
+                note: "Power Finisher. Focus on hip snap.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 54ms
+Error [PrismaClientValidationError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update()` invocation in
+/home/fred/nextjs/workout-tracker-next/.next/server/chunks/[root-of-the-server]__ec22ea7a._.js:169:175
+
+  166     }
+  167 });
+  168 // Update workout and create new exercises
+→ 169 const updatedWorkout = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].workout.update({
+        where: {
+          id: "f22523bf-aaac-4cd8-a93b-4cb664c37d18"
+        },
+        data: {
+          exercises: {
+            create: [
+              {
+                name: "Warm-up: Jump Rope",
+                sets: 1,
+                reps: "3 min",
+                weight: "",
+                note: "Light intensity to elevate heart rate.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z",
+                completed: false
+              },
+              {
+                name: "Warm-up: World's Greatest Stretch",
+                sets: 1,
+                reps: "5 per side",
+                weight: "",
+                note: "Mobility flow.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Warm-up: Pogo Hops",
+                sets: 3,
+                reps: "10",
+                weight: "",
+                note: "Stiff-legged ankle bounces to prep Achilles.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Landmine Press OR Barbell Overhead Press",
+                sets: 3,
+                reps: "6-8",
+                weight: "",
+                note: "Superset 1A: Heavy & Strict",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Single-Arm Dumbbell Snatch",
+                sets: 3,
+                reps: "5 per arm",
+                weight: "",
+                note: "Superset 1B: Explosive. No rest after 1A. Rest 90s after 1B.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Barbell Romanian Deadlift (RDL)",
+                sets: 3,
+                reps: "8",
+                weight: "",
+                note: "Superset 2A: Keep bar close, do not round back.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Standing Broad Jumps",
+                sets: 3,
+                reps: "3-5",
+                weight: "",
+                note: "Superset 2B: Jump for distance, stick landing. Rest 2 mins after.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              },
+              {
+                name: "Kettlebell Swings",
+                sets: 5,
+                reps: "15",
+                weight: "",
+                note: "Power Finisher. Focus on hip snap.",
+                createdAt: "2025-11-21T07:27:01.029Z",
+                updatedAt: "2025-11-21T07:27:01.029Z"
+              }
+            ]
+          }
+        },
+        include: {
+          exercises: true
+        }
+      })
+
+Unknown argument `completed`. Available options are marked with ?.
+    at <unknown> (src/app/api/workouts/route.ts:77:50)
+    at async POST (src/app/api/workouts/route.ts:77:29)
+  75 |
+  76 |       // Update workout and create new exercises
+> 77 |       const updatedWorkout = await prisma.workout.update({
+     |                                                  ^
+  78 |         where: { id: existingWorkout.id },
+  79 |         data: {
+  80 |           exercises: { {
+  clientVersion: '6.7.0'
+}
+ POST /api/workouts 500 in 43ms

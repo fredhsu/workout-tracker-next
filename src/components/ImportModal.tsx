@@ -16,9 +16,9 @@ interface ImportModalProps {
   currentWeek: number;
 }
 
-export default function ImportModal({ 
-  isOpen, 
-  onClose, 
+export default function ImportModal({
+  isOpen,
+  onClose,
   onImportComplete,
   user,
   currentWeek
@@ -30,21 +30,21 @@ export default function ImportModal({
     message: string;
     errors?: string[];
   } | null>(null);
-  
+
   const handleFileUpload = (content: string) => {
     setFileContent(content);
     setImportResult(null);
   };
-  
+
   const handleImport = async () => {
     if (!fileContent || !user) return;
-    
+
     try {
       setIsImporting(true);
       setImportResult(null);
-      
+
       const parsedContent = JSON.parse(fileContent);
-      
+
       const response = await fetch('/api/workouts/import', {
         method: 'POST',
         headers: {
@@ -56,9 +56,9 @@ export default function ImportModal({
           targetWeek: currentWeek,
         }),
       });
-      
+
       const result = await response.json();
-      
+
       if (!response.ok) {
         setImportResult({
           success: false,
@@ -67,25 +67,25 @@ export default function ImportModal({
         });
         return;
       }
-      
+
       setImportResult({
         success: true,
         message: 'Workouts imported successfully!',
       });
-      
+
       // Store important information from the result
-      const _importedWeekNumber = result.weekNumber;
-      
+      // const _importedWeekNumber = result.weekNumber;
+
       // After successful import, wait a moment then close modal and update
       setTimeout(() => {
         onClose();
         // Tell parent component to reload workouts and switch to the imported week
         onImportComplete();
-        
+
         // Force a page refresh to ensure we get fresh data
         window.location.reload();
       }, 1500);
-      
+
     } catch (error) {
       console.error('Import error:', error);
       setImportResult({
@@ -96,12 +96,12 @@ export default function ImportModal({
       setIsImporting(false);
     }
   };
-  
+
   const downloadTemplate = () => {
     const template = generateImportTemplate();
     const dataStr = JSON.stringify(template, null, 2);
     const dataUri = `data:application/json;charset=utf-8,${encodeURIComponent(dataStr)}`;
-    
+
     const link = document.createElement('a');
     link.setAttribute('href', dataUri);
     link.setAttribute('download', 'workout-template.json');
@@ -109,11 +109,11 @@ export default function ImportModal({
     link.click();
     document.body.removeChild(link);
   };
-  
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalHeader>Import Workouts</ModalHeader>
-      
+
       <ModalBody>
         <div className="space-y-4">
           <div>
@@ -127,13 +127,12 @@ export default function ImportModal({
               accept=".json"
             />
           </div>
-          
+
           {importResult && (
-            <div className={`p-3 rounded text-sm ${
-              importResult.success 
-                ? 'bg-green-50 text-green-800' 
+            <div className={`p-3 rounded text-sm ${importResult.success
+                ? 'bg-green-50 text-green-800'
                 : 'bg-red-50 text-red-800'
-            }`}>
+              }`}>
               <p className="font-medium">{importResult.message}</p>
               {importResult.errors && importResult.errors.length > 0 && (
                 <ul className="list-disc list-inside mt-2">
@@ -144,14 +143,14 @@ export default function ImportModal({
               )}
             </div>
           )}
-          
+
           <div className="border-t pt-3">
             <p className="text-sm text-gray-500 mb-2">
               Need help with the format? Download a template to get started.
             </p>
-            <Button 
-              type="button" 
-              variant="outline" 
+            <Button
+              type="button"
+              variant="outline"
               size="sm"
               onClick={downloadTemplate}
             >
@@ -160,16 +159,16 @@ export default function ImportModal({
           </div>
         </div>
       </ModalBody>
-      
+
       <ModalFooter>
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           onClick={onClose}
           disabled={isImporting}
         >
           Cancel
         </Button>
-        <Button 
+        <Button
           onClick={handleImport}
           disabled={!fileContent || isImporting}
         >

@@ -11,6 +11,7 @@ export interface ExerciseEntry {
   reps: string;
   weight?: string;
   note: string;
+  completed?: boolean;
 }
 
 export interface WorkoutData {
