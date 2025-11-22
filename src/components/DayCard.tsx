@@ -15,6 +15,7 @@ interface DayCardProps {
     onAddExercise: (day: number) => void;
     onQuickAdd: (day: number) => void;
     onEditExercise: (day: number, exercise: ExerciseEntry) => void;
+    onInlineSaveExercise?: (day: number, exercise: ExerciseEntry) => void;
     onDeleteExercise: (day: number, id: string) => void;
     onToggleComplete: (id: string, current: boolean) => void;
 }
@@ -28,6 +29,7 @@ export default function DayCard({
     onAddExercise,
     onQuickAdd,
     onEditExercise,
+    onInlineSaveExercise,
     onDeleteExercise,
     onToggleComplete
 }: DayCardProps) {
@@ -119,6 +121,7 @@ export default function DayCard({
                                     isCompleted={!!exercise.completed}
                                     onToggleComplete={(id) => onToggleComplete(id, !!exercise.completed)}
                                     onEdit={(ex) => onEditExercise(dayNumber, ex)}
+                                    onInlineSave={onInlineSaveExercise ? (ex) => onInlineSaveExercise(dayNumber, ex) : undefined}
                                     onDelete={(id) => onDeleteExercise(dayNumber, id)}
                                 />
                             ))}

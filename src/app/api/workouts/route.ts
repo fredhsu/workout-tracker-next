@@ -74,11 +74,19 @@ export async function POST(request: NextRequest) {
       });
 
       // Update workout and create new exercises
+      // Only include specific fields that are allowed in create
       const updatedWorkout = await prisma.workout.update({
         where: { id: existingWorkout.id },
         data: {
           exercises: {
-            create: exercises.map(({ id, workoutId, ...rest }: any) => rest),
+            create: exercises.map((ex: any) => ({
+              name: ex.name,
+              sets: ex.sets,
+              reps: ex.reps,
+              weight: ex.weight || '',
+              note: ex.note || '',
+              completed: ex.completed || false,
+            })),
           },
         },
         include: {
@@ -90,13 +98,21 @@ export async function POST(request: NextRequest) {
     }
 
     // Otherwise, create new workout
+    // Only include specific fields that are allowed in create
     const workout = await prisma.workout.create({
       data: {
         userId,
         weekNumber,
         dayNumber,
         exercises: {
-          create: exercises.map(({ id, workoutId, ...rest }: any) => rest),
+          create: exercises.map((ex: any) => ({
+            name: ex.name,
+            sets: ex.sets,
+            reps: ex.reps,
+            weight: ex.weight || '',
+            note: ex.note || '',
+            completed: ex.completed || false,
+          })),
         },
       },
       include: {

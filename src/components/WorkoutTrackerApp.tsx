@@ -409,6 +409,34 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
     }
   };
 
+  // Handle inline save without opening modal
+  const handleInlineSaveExercise = async (day: number, exercise: ExerciseEntry) => {
+    if (!user) return;
+
+    try {
+      const exercises = workouts[currentWeek]?.[day] ?? getDefaultExercises(day);
+
+      // Update existing exercise
+      const updatedExercises = exercises.map(e =>
+        e.id === exercise.id ? { ...exercise, id: e.id } : e
+      );
+
+      // Update local state
+      setWorkouts(prev => ({
+        ...prev,
+        [currentWeek]: {
+          ...prev[currentWeek],
+          [day]: updatedExercises,
+        },
+      }));
+
+      // Save to database
+      await saveWorkout(day, updatedExercises);
+    } catch (error) {
+      console.error('Failed to save exercise:', error);
+    }
+  };
+
   // Helper functions for new UI
   const toggleDayExpansion = (day: number) => {
     setExpandedDays(prev => {
@@ -619,6 +647,7 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
                 onAddExercise={handleAddExercise}
                 onQuickAdd={() => setShowQuickAdd(prev => ({ ...prev, [day]: !prev[day] }))}
                 onEditExercise={handleEditExercise}
+                onInlineSaveExercise={handleInlineSaveExercise}
                 onDeleteExercise={handleDeleteExercise}
                 onToggleComplete={(id, current) => toggleExerciseComplete(day, id, current)}
               />
