@@ -48,6 +48,8 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { userId, weekNumber, dayNumber, exercises } = body;
 
+    console.log('POST /api/workouts - Request body:', { userId, weekNumber, dayNumber, exercisesCount: exercises?.length });
+
     if (!userId || weekNumber === undefined || dayNumber === undefined || !exercises) {
       return NextResponse.json(
         { error: 'Missing required fields' },
@@ -122,9 +124,13 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json(workout);
   } catch (error) {
-    console.error(error);
+    console.error('POST /api/workouts error:', error);
     return NextResponse.json(
-      { error: 'Failed to create workout' },
+      {
+        error: 'Failed to create workout',
+        details: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined
+      },
       { status: 500 }
     );
   }
