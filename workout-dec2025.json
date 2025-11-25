@@ -1,0 +1,152 @@
+{
+  "weekNumber": 1,
+  "days": {
+    "1": [
+      {
+        "name": "Warm-up: Hang & Squat + T-Spine",
+        "sets": 1,
+        "reps": "5 min",
+        "weight": "Bodyweight",
+        "note": "Hang (30s), Squat (30s), T-Spine Rotations. [cite: 1077]"
+      },
+      {
+        "name": "Plyo Primer: Standing Broad Jumps",
+        "sets": 3,
+        "reps": "3",
+        "weight": "Bodyweight",
+        "note": "Max effort for distance. Stick the landing. Wakes up CNS (Type II fibers) before lifting."
+      },
+      {
+        "name": "Barbell Continuous Clean & Press (ABC Part 1)",
+        "sets": 5,
+        "reps": "8",
+        "weight": "Manageable Load",
+        "note": "Clean every rep. Press overhead. Lower to hang. Repeat 8 times. DO NOT PUT BAR DOWN. Transition immediately to Squats. [cite: 879, 1017]"
+      },
+      {
+        "name": "Barbell Front Squat (ABC Part 2)",
+        "sets": 5,
+        "reps": "1-5 (Build to 8)",
+        "weight": "Same as Press",
+        "note": "Immediately after the 8th press, rack bar. Perform squats. Put bar down. Rest 2-3 min. [cite: 1120]"
+      },
+      {
+        "name": "Barbell Curls",
+        "sets": 5,
+        "reps": "8",
+        "weight": "",
+        "note": "Cornerstone exercise. Strict form. [cite: 895, 1034]"
+      },
+      {
+        "name": "Ab Wheel Rollouts",
+        "sets": 3,
+        "reps": "10",
+        "weight": "",
+        "note": "Roll out, pause, roll back. [cite: 924]"
+      }
+    ],
+    "2": [
+      {
+        "name": "Zone 2 Cardio",
+        "sets": 1,
+        "reps": "45-60 min",
+        "weight": "",
+        "note": "Peloton or Ruck. Conversational pace. [cite: 460]"
+      }
+    ],
+    "3": [
+      {
+        "name": "Warm-up: Batwing Holds",
+        "sets": 3,
+        "reps": "10 sec hold",
+        "weight": "Light DB",
+        "note": "Face down on bench. Pull DBs to armpits, squeeze shoulder blades. Preps shoulders for pressing. "
+      },
+      {
+        "name": "Double KB Press Ladders",
+        "sets": 3,
+        "reps": "2-3-5",
+        "weight": "Heavy KB",
+        "note": "Strength focus. Rest between rungs. [cite: 350]"
+      },
+      {
+        "name": "Kettlebell Armor Building Complex (Classic)",
+        "sets": 15,
+        "reps": "1 Complex",
+        "weight": "Double KB",
+        "note": "2 Cleans, 1 Press, 3 Squats. Perform EMOM. "
+      },
+      {
+        "name": "Pull-ups",
+        "sets": 3,
+        "reps": "Max - 1",
+        "weight": "",
+        "note": "Vertical pull strength. [cite: 1264]"
+      }
+    ],
+    "4": [
+      {
+        "name": "VO2 Max Intervals (Norwegian 4x4)",
+        "sets": 4,
+        "reps": "4 min work / 3 min rest",
+        "weight": "",
+        "note": "90% Max HR intensity. High intensity to complement Zone 2."
+      }
+    ],
+    "5": [
+      {
+        "name": "Lateral Heiden Jumps",
+        "sets": 3,
+        "reps": "5 per side",
+        "weight": "",
+        "note": "Lateral power and stability."
+      },
+      {
+        "name": "Barbell Romanian Deadlift (RDL)",
+        "sets": 3,
+        "reps": "8-10",
+        "weight": "",
+        "note": "Essential Hinge movement. Hips high, mild knee bend, flat back. Replaces Hip Thrusts for better functional armor. "
+      },
+      {
+        "name": "Bulgarian Split Squats",
+        "sets": 3,
+        "reps": "8-10 per leg",
+        "weight": "",
+        "note": "Unilateral leg strength. Fixes asymmetries."
+      },
+      {
+        "name": "Batwing Rows",
+        "sets": 4,
+        "reps": "5 (with 5 sec hold)",
+        "weight": "",
+        "note": "Heavy rows. Pause at top. "
+      },
+      {
+        "name": "Suitcase Carries",
+        "sets": 4,
+        "reps": "Distance",
+        "weight": "Heavy",
+        "note": "One hand loaded. Walk until posture breaks. [cite: 927]"
+      }
+    ],
+    "6": [
+      {
+        "name": "Long Walk / Ruck",
+        "sets": 1,
+        "reps": "60+ min",
+        "weight": "20-30lbs pack",
+        "note": "Active recovery. 'It is solved by walking.' [cite: 451, 1364]"
+      }
+    ],
+    "7": [
+      {
+        "name": "Mobility Flow",
+        "sets": 1,
+        "reps": "20 min",
+        "weight": "",
+        "note": "Hang (30s) [cite: 1077], Goblet Squat Sit (30s) [cite: 1077], Original Strength Rocking."
+      }
+    ]
+  }
+}

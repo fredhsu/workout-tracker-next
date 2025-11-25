@@ -21,7 +21,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - Page components in src/app/
   - Utility functions in src/lib/
 
+## Database
+- **Database**: SQLite (development) with Prisma ORM
+  - Database file: `prisma/dev.db`
+  - Schema file: `prisma/schema.prisma`
+- **Models**: User, Workout (organized by week/day), Exercise
+- **Production**: Schema includes PostgreSQL configuration (commented out)
+- **API Routes**:
+  - `/api/auth` - User authentication
+  - `/api/workouts` - CRUD operations for workouts
+  - `/api/exercises` - CRUD operations for exercises
+  - `/api/workouts/export` - Export workout data
+  - `/api/workouts/import` - Import workout data
+
 ## Notes
-- Local storage is used for persisting data
 - UI components use shadcn/ui pattern with Radix primitives
 - React 19 with Next.js 15 and App Router
+- Frontend uses React hooks for state management with API calls for persistence
