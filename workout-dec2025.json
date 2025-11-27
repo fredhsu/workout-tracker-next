@@ -7,7 +7,7 @@
         "sets": 1,
         "reps": "5 min",
         "weight": "Bodyweight",
-        "note": "Hang (30s), Squat (30s), T-Spine Rotations. [cite: 1077]"
+        "note": "Hang (30s), Squat (30s), T-Spine Rotations."
       },
       {
         "name": "Plyo Primer: Standing Broad Jumps",
@@ -21,28 +21,28 @@
         "sets": 5,
         "reps": "8",
         "weight": "Manageable Load",
-        "note": "Clean every rep. Press overhead. Lower to hang. Repeat 8 times. DO NOT PUT BAR DOWN. Transition immediately to Squats. [cite: 879, 1017]"
+        "note": "Clean every rep. Press overhead. Lower to hang. Repeat 8 times. DO NOT PUT BAR DOWN. Transition immediately to Squats."
       },
       {
         "name": "Barbell Front Squat (ABC Part 2)",
         "sets": 5,
         "reps": "1-5 (Build to 8)",
         "weight": "Same as Press",
-        "note": "Immediately after the 8th press, rack bar. Perform squats. Put bar down. Rest 2-3 min. [cite: 1120]"
+        "note": "Immediately after the 8th press, rack bar. Perform squats. Put bar down. Rest 2-3 min."
       },
       {
         "name": "Barbell Curls",
         "sets": 5,
         "reps": "8",
         "weight": "",
-        "note": "Cornerstone exercise. Strict form. [cite: 895, 1034]"
+        "note": "Cornerstone exercise[cite: 1226]. Strict form."
       },
       {
         "name": "Ab Wheel Rollouts",
         "sets": 3,
         "reps": "10",
         "weight": "",
-        "note": "Roll out, pause, roll back. [cite: 924]"
+        "note": "Roll out, pause, roll back[cite: 924]."
       }
     ],
     "2": [
@@ -51,7 +51,7 @@
         "sets": 1,
         "reps": "45-60 min",
         "weight": "",
-        "note": "Peloton or Ruck. Conversational pace. [cite: 460]"
+        "note": "Peloton or Ruck. Conversational pace."
       }
     ],
     "3": [
@@ -60,28 +60,35 @@
         "sets": 3,
         "reps": "10 sec hold",
         "weight": "Light DB",
-        "note": "Face down on bench. Pull DBs to armpits, squeeze shoulder blades. Preps shoulders for pressing. "
+        "note": "Face down on bench. Pull DBs to armpits, squeeze shoulder blades. [cite_start]Preps shoulders for pressing[cite: 1563]."
+      },
+      {
+        "name": "Plyo Primer: Box Jumps",
+        "sets": 3,
+        "reps": "3-5",
+        "weight": "Bodyweight",
+        "note": "Explosive Vertical Power. Jump up, land soft, STEP down (never jump down)."
       },
       {
         "name": "Double KB Press Ladders",
         "sets": 3,
         "reps": "2-3-5",
         "weight": "Heavy KB",
-        "note": "Strength focus. Rest between rungs. [cite: 350]"
+        "note": "Strength focus. [cite_start]Rest between rungs[cite: 685]."
       },
       {
         "name": "Kettlebell Armor Building Complex (Classic)",
         "sets": 15,
         "reps": "1 Complex",
         "weight": "Double KB",
-        "note": "2 Cleans, 1 Press, 3 Squats. Perform EMOM. "
+        "note": "2 Cleans, 1 Press, 3 Squats. [cite_start]Perform EMOM[cite: 259]."
       },
       {
         "name": "Pull-ups",
         "sets": 3,
         "reps": "Max - 1",
         "weight": "",
-        "note": "Vertical pull strength. [cite: 1264]"
+        "note": "Vertical pull strength."
       }
     ],
     "4": [
@@ -102,11 +109,18 @@
         "note": "Lateral power and stability."
       },
       {
+        "name": "Barbell Bench Press",
+        "sets": 3,
+        "reps": "8-10",
+        "weight": "",
+        "note": "Horizontal Push Strength. [cite_start]Controlled eccentric (lowering)[cite: 1225]."
+      },
+      {
         "name": "Barbell Romanian Deadlift (RDL)",
         "sets": 3,
         "reps": "8-10",
         "weight": "",
-        "note": "Essential Hinge movement. Hips high, mild knee bend, flat back. Replaces Hip Thrusts for better functional armor. "
+        "note": "Essential Hinge movement. Hips high, mild knee bend, flat back."
       },
       {
         "name": "Bulgarian Split Squats",
@@ -120,14 +134,14 @@
         "sets": 4,
         "reps": "5 (with 5 sec hold)",
         "weight": "",
-        "note": "Heavy rows. Pause at top. "
+        "note": "Heavy rows. [cite_start]Pause at top[cite: 1563]."
       },
       {
         "name": "Suitcase Carries",
         "sets": 4,
         "reps": "Distance",
         "weight": "Heavy",
-        "note": "One hand loaded. Walk until posture breaks. [cite: 927]"
+        "note": "One hand loaded. [cite_start]Walk until posture breaks[cite: 927]."
       }
     ],
     "6": [
@@ -136,7 +150,7 @@
         "sets": 1,
         "reps": "60+ min",
         "weight": "20-30lbs pack",
-        "note": "Active recovery. 'It is solved by walking.' [cite: 451, 1364]"
+        "note": "Active recovery. [cite_start]'It is solved by walking'[cite: 451]."
       }
     ],
     "7": [
@@ -145,7 +159,7 @@
         "sets": 1,
         "reps": "20 min",
         "weight": "",
-        "note": "Hang (30s) [cite: 1077], Goblet Squat Sit (30s) [cite: 1077], Original Strength Rocking."
+        "note": "Hang (30s), Goblet Squat Sit (30s), Original Strength Rocking[cite: 1079]."
       }
     ]
   }

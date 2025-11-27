@@ -1,0 +1,271 @@
+{
+  "weekNumber": 17,
+  "days": {
+    "1": [
+      {
+        "name": "Dynamic Warm-Up",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Easy bike or jump rope + leg swings, hip circles, arm circles, T-spine rotations, walking lunges"
+      },
+      {
+        "name": "Kettlebell Swing (Power Primer)",
+        "sets": 3,
+        "reps": "10–15",
+        "weight": "",
+        "note": "Explosive hip drive, neutral spine; rest ~60s"
+      },
+      {
+        "name": "Jumping Bulgarian Split Squat (Bodyweight)",
+        "sets": 3,
+        "reps": "6–8 / leg",
+        "weight": "",
+        "note": "Explosive rear-foot-elevated jump; soft landing; knee tracks over toes; 60–90s rest"
+      },
+      {
+        "name": "Barbell Bench Press",
+        "sets": 3,
+        "reps": "5–8",
+        "weight": "",
+        "note": "Scapula retracted; feet planted; controlled bar path; SUPerset with Pull-Ups"
+      },
+      {
+        "name": "Pull-Ups (band-assisted if needed)",
+        "sets": 3,
+        "reps": "AMRAP (6–10 target)",
+        "weight": "",
+        "note": "Overhand grip; full ROM; controlled eccentric"
+      },
+      {
+        "name": "One-Arm DB Row (Bench-Supported)",
+        "sets": 3,
+        "reps": "10 / arm",
+        "weight": "",
+        "note": "Squeeze at top; avoid torso twist; neutral spine"
+      },
+      {
+        "name": "Goblet Squat (KB/DB)",
+        "sets": 2,
+        "reps": "10–12",
+        "weight": "",
+        "note": "Front-loaded; upright torso; depth with control (reduced volume to balance week)"
+      },
+      {
+        "name": "Cooldown Stretch",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Quads, hamstrings, calves, chest, lats; slow breathing"
+      }
+    ],
+    "2": [
+      {
+        "name": "Stationary Bike HIIT – Option A (4x4)",
+        "sets": 4,
+        "reps": "4:00 hard / 4:00 easy",
+        "weight": "",
+        "note": "Hard at ~85–90% max effort; include 5–10 min warm-up + 5 min cool-down"
+      },
+      {
+        "name": "Stationary Bike HIIT – Option B (Sprints)",
+        "sets": 10,
+        "reps": "0:30 all-out / 1:30 easy",
+        "weight": "",
+        "note": "RPE 9–10 on sprints; choose A or B (not both)"
+      },
+      {
+        "name": "Post-HIIT Mobility",
+        "sets": 1,
+        "reps": "10–15 min",
+        "weight": "",
+        "note": "Hip flexors, hamstrings, calves, chest/shoulders, T-spine rotations"
+      }
+    ],
+    "3": [
+      {
+        "name": "Dynamic Warm-Up",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Bike or jump rope + mobility: leg swings, world’s greatest stretch, arm circles, hip openers"
+      },
+      {
+        "name": "Kettlebell Clean Practice (Technique)",
+        "sets": 3,
+        "reps": "6–8 / side",
+        "weight": "",
+        "note": "Single- or double-KB; crisp hip snap; rack softly without banging forearm"
+      },
+      {
+        "name": "Single-Arm Kettlebell Press (Strict)",
+        "sets": 3,
+        "reps": "6–8 / side",
+        "weight": "",
+        "note": "From rack; ribs down; glute squeeze; no lean"
+      },
+      {
+        "name": "Goblet or Double-KB Front Squat",
+        "sets": 3,
+        "reps": "8–10",
+        "weight": "",
+        "note": "Elbows forward; brace; full-foot pressure; SUPerset with Arnold Press optional on light weeks"
+      },
+      {
+        "name": "Single-Leg Romanian Deadlift (DB or KB)",
+        "sets": 3,
+        "reps": "8 / leg",
+        "weight": "",
+        "note": "Hips square; slight knee bend; balance focus"
+      },
+      {
+        "name": "Renegade Row (DB)",
+        "sets": 3,
+        "reps": "8–10 / arm",
+        "weight": "",
+        "note": "Plank position; resist hip rotation; slow control"
+      },
+      {
+        "name": "Offset Farmer’s Carry",
+        "sets": 2,
+        "reps": "30–60 s / side",
+        "weight": "",
+        "note": "Carry one side only; tall posture; anti-lateral flexion"
+      },
+      {
+        "name": "Optional: Incline Dumbbell Press",
+        "sets": 2,
+        "reps": "8–10",
+        "weight": "",
+        "note": "Upper-chest emphasis if shoulders feel fresh; skip if pressing volume is high"
+      },
+      {
+        "name": "Cooldown Stretch",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Hips, adductors, shoulders, T-spine; deep breathing"
+      }
+    ],
+    "4": [
+      {
+        "name": "Light Cardio Warm-Up",
+        "sets": 1,
+        "reps": "5 min",
+        "weight": "",
+        "note": "Easy walk or easy spin"
+      },
+      {
+        "name": "Dynamic Mobility Circuit",
+        "sets": 1,
+        "reps": "10–15 min",
+        "weight": "",
+        "note": "Leg swings, hip openers, shoulder dislocates (band/towel), T-spine rotations, ankle circles"
+      },
+      {
+        "name": "Yoga / Static Stretch Flow",
+        "sets": 1,
+        "reps": "20–30 min",
+        "weight": "",
+        "note": "Down dog↔cobra, pigeon, low lunge w/ twist, triangle, child’s pose; 30–60s holds"
+      },
+      {
+        "name": "Balance & Stability",
+        "sets": 2,
+        "reps": "Single-leg balance 30–45s/leg + Heel-to-toe walk",
+        "weight": "",
+        "note": "Optional tai chi–style weight shifts"
+      },
+      {
+        "name": "Relaxation Breathing",
+        "sets": 1,
+        "reps": "3–5 min",
+        "weight": "",
+        "note": "Nasal diaphragmatic breathing; recovery emphasis"
+      }
+    ],
+    "5": [
+      {
+        "name": "Dynamic Warm-Up",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Jump rope or easy bike + dynamic mobility"
+      },
+      {
+        "name": "Armor Building Complex (Dan John–Inspired, Double KB)",
+        "sets": 5,
+        "reps": "Complex = Clean + Press + Front Squat",
+        "weight": "",
+        "note": "Use two matching KBs. Do 1 clean, 1 press, 1 front squat = 1 rep. Perform 5 reps per round; rest 90s; complete 5–8 rounds. Keep reps crisp; stop 1–2 reps in reserve."
+      },
+      {
+        "name": "Chin-Ups (Underhand Grip)",
+        "sets": 3,
+        "reps": "AMRAP (6–10 target)",
+        "weight": "",
+        "note": "Controlled tempo; full ROM; band-assisted if needed"
+      },
+      {
+        "name": "Lateral Lunge (DB or KB optional)",
+        "sets": 2,
+        "reps": "8 / side",
+        "weight": "",
+        "note": "Controlled side-to-side; hip/adductor strength; balances sagittal plane work"
+      },
+      {
+        "name": "Farmer’s Carry (Heavy, DB or KB)",
+        "sets": 2,
+        "reps": "60 s walk",
+        "weight": "",
+        "note": "Heavy implements; tall posture; strong grip"
+      },
+      {
+        "name": "Pallof Press (Band or Cable)",
+        "sets": 2,
+        "reps": "10 / side (1–2s hold)",
+        "weight": "",
+        "note": "Press straight out; resist rotation; core stability"
+      },
+      {
+        "name": "Cooldown Stretch",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Stretch chest/shoulders (pressing), hips/quads (front squats); relaxed breathing"
+      }
+    ],
+    "6": [
+      {
+        "name": "Cardio – Steady State",
+        "sets": 1,
+        "reps": "30–60 min (Zone 2)",
+        "weight": "",
+        "note": "Bike, jog, row, swim; conversational pace"
+      },
+      {
+        "name": "Optional: Jump Rope + BW Circuit",
+        "sets": 2,
+        "reps": "1:00 rope + 15 squats + 10 push-ups + 0:30 plank",
+        "weight": "",
+        "note": "Short finisher only if fresh; minimal rest between moves"
+      },
+      {
+        "name": "Post-Cardio Stretch",
+        "sets": 1,
+        "reps": "5–10 min",
+        "weight": "",
+        "note": "Calves, hamstrings, quads, hips, shoulders"
+      }
+    ],
+    "7": [
+      {
+        "name": "Rest Day",
+        "sets": 1,
+        "reps": "Full rest",
+        "weight": "",
+        "note": "Optional easy walk and gentle stretching"
+      }
+    ]
+  }
+}
