@@ -1,0 +1,201 @@
+{
+  "weekNumber": 1,
+  "days": {
+    "1": [
+      {
+        "name": "Warm-up: Hang & Squat + T-Spine",
+        "sets": 1,
+        "reps": "5 min",
+        "weight": "Bodyweight",
+        "note": "Hang (30s), Squat (30s), T-Spine Rotations."
+      },
+      {
+        "name": "Plyo Primer: Standing Broad Jumps",
+        "sets": 2,
+        "reps": "3",
+        "weight": "Bodyweight",
+        "note": "Power primer: crisp, submaximal jumps. Focus on soft landings, not max distance."
+      },
+      {
+        "name": "Barbell Continuous Clean & Press (ABC Part 1)",
+        "sets": 5,
+        "reps": "8",
+        "weight": "Manageable Load",
+        "note": "Clean every rep. Press overhead. Lower to hang. Do not put the bar down until the set is complete; transition immediately to squats."
+      },
+      {
+        "name": "Barbell Front Squat (ABC Part 2)",
+        "sets": 5,
+        "reps": "1-5 (build toward 8)",
+        "weight": "",
+        "note": "Finish the complex with front squats. Build up to 5–8 reps as strength allows while keeping form solid."
+      },
+      {
+        "name": "Barbell Curls",
+        "sets": 5,
+        "reps": "8",
+        "weight": "",
+        "note": "Classic arm work. Control the eccentric; no swinging."
+      },
+      {
+        "name": "Ab Wheel Rollouts",
+        "sets": 3,
+        "reps": "10",
+        "weight": "",
+        "note": "Roll out under control, pause briefly, then roll back without letting hips sag."
+      },
+      {
+        "name": "Band Pull-Aparts",
+        "sets": 3,
+        "reps": "15-20",
+        "weight": "Light band",
+        "note": "Scapular stability and posture; keep shoulders down and squeeze shoulder blades together."
+      }
+    ],
+    "2": [
+      {
+        "name": "Zone 2 Cardio",
+        "sets": 1,
+        "reps": "45-60 min",
+        "weight": "",
+        "note": "Peloton or ruck. Conversational pace. If legs feel beat up, opt for easier spinning or flat walking instead of rucking."
+      }
+    ],
+    "3": [
+      {
+        "name": "Warm-up: Batwing Holds",
+        "sets": 3,
+        "reps": "10 sec hold",
+        "weight": "Light DB",
+        "note": "Face down on a bench. Pull DBs to armpits and squeeze shoulder blades together."
+      },
+      {
+        "name": "Kettlebell Swings",
+        "sets": 3,
+        "reps": "8-10",
+        "weight": "Moderate",
+        "note": "Explosive hip hinge. Snap hips so the bell floats to chest height. Stop sets before form breaks."
+      },
+      {
+        "name": "Double KB Press Ladders",
+        "sets": 3,
+        "reps": "2-3-5",
+        "weight": "Heavy KB",
+        "note": "Press ladders for strength. Rest briefly between rungs; keep reps crisp and avoid grinding."
+      },
+      {
+        "name": "Kettlebell Armor Building Complex (Classic)",
+        "sets": 15,
+        "reps": "1 complex",
+        "weight": "Double KB",
+        "note": "2 cleans, 1 press, 3 squats. Perform EMOM with a solid but non-grindy weight."
+      },
+      {
+        "name": "Pull-ups",
+        "sets": 3,
+        "reps": "Max - 1",
+        "weight": "",
+        "note": "Vertical pulling strength. Leave one good rep in the tank on each set."
+      },
+      {
+        "name": "Chest-Supported Row",
+        "sets": 3,
+        "reps": "8-12",
+        "weight": "Moderate",
+        "note": "Horizontal pull to balance pressing. Pause briefly at the top with shoulder blades squeezed."
+      },
+      {
+        "name": "Pallof Press",
+        "sets": 2,
+        "reps": "10-12 per side",
+        "weight": "Light to moderate band",
+        "note": "Anti-rotation core. Resist twisting; keep ribs down and glutes lightly engaged."
+      }
+    ],
+    "4": [
+      {
+        "name": "VO2 Max Intervals (Norwegian 4x4)",
+        "sets": 4,
+        "reps": "4 min work / 3 min rest",
+        "weight": "",
+        "note": "Hard intervals at about 90% max HR. Maintain good running or cycling form. Warm up and cool down 5–10 minutes each."
+      }
+    ],
+    "5": [
+      {
+        "name": "Lateral Heiden Jumps",
+        "sets": 2,
+        "reps": "4-5 per side",
+        "weight": "",
+        "note": "Lateral power and deceleration. Smooth, controlled hops with soft landings; stop if landings get sloppy."
+      },
+      {
+        "name": "Barbell Bench Press",
+        "sets": 3,
+        "reps": "8-10",
+        "weight": "",
+        "note": "Horizontal push strength. Use a controlled eccentric and strong, stable arch; no bouncing off the chest."
+      },
+      {
+        "name": "Barbell Romanian Deadlift (RDL)",
+        "sets": 3,
+        "reps": "8-10",
+        "weight": "",
+        "note": "Essential hinge movement. Hips high, slight knee bend, flat back. Feel the stretch in the hamstrings."
+      },
+      {
+        "name": "Bulgarian Split Squats",
+        "sets": 3,
+        "reps": "8-10 per leg",
+        "weight": "",
+        "note": "Unilateral leg strength and balance. Keep torso upright and front knee tracking over middle toes."
+      },
+      {
+        "name": "Batwing Rows",
+        "sets": 4,
+        "reps": "5 (5 sec hold at top)",
+        "weight": "",
+        "note": "Heavy rows with a long squeeze at the top. Do not let shoulders shrug toward ears."
+      },
+      {
+        "name": "Face Pulls (Band or Cable)",
+        "sets": 3,
+        "reps": "15-20",
+        "weight": "Light to moderate",
+        "note": "High-rep scap and rear-delt work. Pull toward nose/forehead with elbows high."
+      },
+      {
+        "name": "Suitcase Carries",
+        "sets": 4,
+        "reps": "Distance",
+        "weight": "Heavy",
+        "note": "One hand loaded. Walk with tall posture and level shoulders; switch sides each set."
+      }
+    ],
+    "6": [
+      {
+        "name": "Long Walk / Ruck",
+        "sets": 1,
+        "reps": "60+ min",
+        "weight": "20-30 lb pack",
+        "note": "Active recovery. Choose a comfortable pace; terrain can be variable but avoid pounding downhill if joints are sore."
+      }
+    ],
+    "7": [
+      {
+        "name": "Mobility Flow",
+        "sets": 1,
+        "reps": "20 min",
+        "weight": "",
+        "note": "Cycle through hang (30s), goblet squat sit (30s), and Original Strength rocking. Move gently and breathe."
+      },
+      {
+        "name": "Side Planks",
+        "sets": 2,
+        "reps": "20-30 sec per side",
+        "weight": "Bodyweight",
+        "note": "Anti-lateral-flexion core. Straight line from head to heels; do not let hips sag."
+      }
+    ]
+  }
+}

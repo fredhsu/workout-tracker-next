@@ -1,0 +1,180 @@
+{
+  "weekNumber": 2,
+  "days": {
+    "1": [
+      {
+        "name": "Warm-up: Hang & Squat + T-Spine",
+        "sets": 1,
+        "reps": "5 min",
+        "weight": "Bodyweight",
+        "note": "Hang (30s), Squat (30s), T-Spine Rotations."
+      },
+      {
+        "name": "Plyo Primer: Low Box Jumps",
+        "sets": 2,
+        "reps": "3-5",
+        "weight": "Bodyweight",
+        "note": "Use a low box. Step down between reps. Focus on soft, quiet landings rather than max height."
+      },
+      {
+        "name": "Barbell Push Press",
+        "sets": 4,
+        "reps": "5",
+        "weight": "Heavy",
+        "note": "Use a slight leg drive to push the bar overhead. Power and strength emphasis with crisp lockouts."
+      },
+      {
+        "name": "Barbell Front Squat (Paused)",
+        "sets": 4,
+        "reps": "5-6",
+        "weight": "Moderate-Heavy",
+        "note": "Pause 1–2 seconds in the bottom while staying tight. Maintain an upright torso and strong brace."
+      },
+      {
+        "name": "Hammer Curls (DB)",
+        "sets": 5,
+        "reps": "8",
+        "weight": "Moderate",
+        "note": "Neutral grip to share stress between biceps and forearms; usually friendlier on elbows than straight-bar curls."
+      },
+      {
+        "name": "Ab Wheel Rollouts",
+        "sets": 3,
+        "reps": "10",
+        "weight": "",
+        "note": "Roll out under control, pause briefly, then roll back without letting hips sag."
+      },
+      {
+        "name": "Band Pull-Aparts",
+        "sets": 3,
+        "reps": "15-20",
+        "weight": "Light band",
+        "note": "Scapular stability and posture; keep shoulders down and squeeze shoulder blades together."
+      }
+    ],
+    "2": [
+      {
+        "name": "Zone 2 Cardio",
+        "sets": 1,
+        "reps": "45-60 min",
+        "weight": "",
+        "note": "Peloton or ruck. Conversational pace. If legs feel beat up, opt for easier spinning or flat walking instead of rucking."
+      }
+    ],
+    "3": [
+      {
+        "name": "Warm-up: Batwing Holds",
+        "sets": 3,
+        "reps": "10 sec hold",
+        "weight": "Light DB",
+        "note": "Face down on a bench. Pull DBs to armpits and squeeze shoulder blades together."
+      },
+      {
+        "name": "Kettlebell Armor Building Complex (Classic)",
+        "sets": 15,
+        "reps": "1 complex",
+        "weight": "Double KB",
+        "note": "2 cleans, 1 press, 3 squats. Perform EMOM with a solid but non-grindy weight."
+      },
+      {
+        "name": "Pull-ups",
+        "sets": 3,
+        "reps": "Max - 1",
+        "weight": "",
+        "note": "Vertical pulling strength. Leave one good rep in the tank on each set."
+      },
+      {
+        "name": "Chest-Supported Row",
+        "sets": 3,
+        "reps": "8-12",
+        "weight": "Moderate",
+        "note": "Horizontal pull to balance pressing. Pause briefly at the top with shoulder blades squeezed."
+      },
+      {
+        "name": "Pallof Press",
+        "sets": 2,
+        "reps": "10-12 per side",
+        "weight": "Light to moderate band",
+        "note": "Anti-rotation core. Resist twisting; keep ribs down and glutes lightly engaged."
+      }
+    ],
+    "4": [
+      {
+        "name": "Tempo / Threshold Intervals",
+        "sets": 1,
+        "reps": "3 x 8-10 min (2-3 min easy between)",
+        "weight": "",
+        "note": "Comfortably hard (upper Zone 3 / low Zone 4). You can speak in short phrases. Warm up and cool down 5–10 minutes."
+      }
+    ],
+    "5": [
+      {
+        "name": "Incline Dumbbell Bench Press",
+        "sets": 3,
+        "reps": "8-10",
+        "weight": "Moderate-Heavy",
+        "note": "Incline press for upper chest and shoulders. Slightly friendlier shoulder angle than flat bench."
+      },
+      {
+        "name": "Single-Leg Romanian Deadlift (DB or KB)",
+        "sets": 3,
+        "reps": "8-10 per leg",
+        "weight": "Moderate",
+        "note": "Unilateral hinge for hamstrings, glutes, and balance. Use support as needed to keep the back flat."
+      },
+      {
+        "name": "Reverse Lunges",
+        "sets": 3,
+        "reps": "8-10 per leg",
+        "weight": "",
+        "note": "Step back into the lunge; more knee-friendly than forward lunges while still training unilateral leg strength."
+      },
+      {
+        "name": "Batwing Rows",
+        "sets": 4,
+        "reps": "5 (5 sec hold at top)",
+        "weight": "",
+        "note": "Heavy rows with a long squeeze at the top. Do not let shoulders shrug toward ears."
+      },
+      {
+        "name": "Face Pulls (Band or Cable)",
+        "sets": 3,
+        "reps": "15-20",
+        "weight": "Light to moderate",
+        "note": "High-rep scap and rear-delt work. Pull toward nose/forehead with elbows high."
+      },
+      {
+        "name": "Suitcase Carries",
+        "sets": 4,
+        "reps": "Distance",
+        "weight": "Heavy",
+        "note": "One hand loaded. Walk with tall posture and level shoulders; switch sides each set."
+      }
+    ],
+    "6": [
+      {
+        "name": "Long Walk / Ruck",
+        "sets": 1,
+        "reps": "60+ min",
+        "weight": "20-30 lb pack",
+        "note": "Active recovery. Choose a comfortable pace; terrain can be variable but avoid pounding downhill if joints are sore."
+      }
+    ],
+    "7": [
+      {
+        "name": "Mobility Flow",
+        "sets": 1,
+        "reps": "20 min",
+        "weight": "",
+        "note": "Cycle through hang (30s), goblet squat sit (30s), and Original Strength rocking. Move gently and breathe."
+      },
+      {
+        "name": "Side Planks",
+        "sets": 2,
+        "reps": "20-30 sec per side",
+        "weight": "Bodyweight",
+        "note": "Anti-lateral-flexion core. Straight line from head to heels; do not let hips sag."
+      }
+    ]
+  }
+}
