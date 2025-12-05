@@ -56,8 +56,8 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
 
 
   // For swipe gestures
-  const [touchStart, setTouchStart] = useState<number>(0);
-  const [touchEnd, setTouchEnd] = useState<number>(0);
+  const [touchStart, setTouchStart] = useState<{ x: number; y: number } | null>(null);
+  const [touchEnd, setTouchEnd] = useState<{ x: number; y: number } | null>(null);
 
   // For quick add exercise
   const [showQuickAdd, setShowQuickAdd] = useState<{ [key: number]: boolean }>({});
@@ -478,19 +478,56 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
 
   // Swipe gesture handlers
   const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.targetTouches[0].clientX);
+    // Ignore touches on interactive elements to prevent accidental swipes
+    const target = e.target as HTMLElement;
+    const isInteractive = target.closest('button, input, select, textarea, a, [role="button"], [role="menuitem"]');
+
+    if (isInteractive) {
+      setTouchStart(null);
+      return;
+    }
+
+    setTouchStart({
+      x: e.targetTouches[0].clientX,
+      y: e.targetTouches[0].clientY,
+    });
+    setTouchEnd(null);
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    if (!touchStart) return;
+
+    setTouchEnd({
+      x: e.targetTouches[0].clientX,
+      y: e.targetTouches[0].clientY,
+    });
   };
 
   const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
+    if (!touchStart || !touchEnd) {
+      setTouchStart(null);
+      setTouchEnd(null);
+      return;
+    }
 
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
+    const deltaX = touchStart.x - touchEnd.x;
+    const deltaY = Math.abs(touchStart.y - touchEnd.y);
+
+    // Require minimum 100px horizontal movement
+    const minSwipeDistance = 100;
+
+    // Ensure it's a mostly horizontal gesture (not vertical scrolling)
+    // Horizontal movement should be at least 2x the vertical movement
+    const isHorizontalGesture = Math.abs(deltaX) > deltaY * 2;
+
+    if (!isHorizontalGesture) {
+      setTouchStart(null);
+      setTouchEnd(null);
+      return;
+    }
+
+    const isLeftSwipe = deltaX > minSwipeDistance;
+    const isRightSwipe = deltaX < -minSwipeDistance;
 
     if (isLeftSwipe) {
       // Swipe left - go to newer week
@@ -501,12 +538,16 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
     }
 
     if (isRightSwipe) {
-      // Swipe right - go to older week  
+      // Swipe right - go to older week
       const currentIndex = availableWeeks.indexOf(currentWeek);
       if (currentIndex < availableWeeks.length - 1) {
         setCurrentWeek(availableWeeks[currentIndex + 1]);
       }
     }
+
+    // Reset touch state
+    setTouchStart(null);
+    setTouchEnd(null);
   };
 
   // Quick add exercise handler
