@@ -219,31 +219,50 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
   const addWeek = async () => {
     if (!user) return;
 
-    const next = currentWeek + 1;
-    console.log('Adding new week:', next);
+    // Find the highest numbered week to copy from
+    const weekNumbers = Object.keys(workouts).map(Number);
+    const highestWeek = weekNumbers.length > 0 ? Math.max(...weekNumbers) : 0;
+    const next = highestWeek + 1;
+    console.log('Adding new week:', next, 'copying from week:', highestWeek);
 
     // Set flag to prevent loadWorkouts from interfering
     setIsAddingWeek(true);
 
-    // Create empty workouts for the new week with the default template
+    // Create workouts for the new week by copying the highest week
     const newWeekWorkouts: Record<number, ExerciseEntry[]> = {};
 
     // First update the current week immediately
     setCurrentWeek(next);
 
-    // For each day, set up default exercises
+    // Get the source week data (highest week or default template if none exists)
+    const sourceWeekData = highestWeek > 0 ? workouts[highestWeek] : null;
+
+    // For each day, copy exercises from the highest week
     for (let day = 1; day <= 6; day++) {
-      if (!defaultTemplate[day]) {
+      let exercises: ExerciseEntry[];
+
+      if (sourceWeekData && sourceWeekData[day]) {
+        // Copy from the highest week, resetting completed status and weight
+        exercises = sourceWeekData[day].map(e => ({
+          name: e.name,
+          sets: e.sets,
+          reps: e.reps,
+          weight: '',
+          note: e.note || '',
+          completed: false,
+        }));
+      } else if (defaultTemplate[day]) {
+        // Fall back to default template if no source data for this day
+        exercises = defaultTemplate[day].map(e => ({
+          name: e.name,
+          sets: e.sets,
+          reps: e.reps,
+          weight: '',
+          note: e.note || '',
+        }));
+      } else {
         continue;
       }
-
-      const exercises = defaultTemplate[day].map(e => ({
-        name: e.name,
-        sets: e.sets,
-        reps: e.reps,
-        weight: '',
-        note: e.note || '',
-      }));
 
       newWeekWorkouts[day] = exercises;
 
