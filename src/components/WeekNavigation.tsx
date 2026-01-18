@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 interface WeekNavigationProps {
   currentWeek: number;
   availableWeeks: number[];
-  onWeekChange: (week: number) => void;
+  onWeekChange: (weekNumber: number) => void;
   onAddWeek: () => void;
 }
 

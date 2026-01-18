@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Plus, Zap, ChevronDown, ChevronUp } from 'lucide-react';
+import { Plus, Zap, ChevronDown } from 'lucide-react';
 import { ExerciseEntry } from '@/lib/types';
 import ExerciseItem from './ExerciseItem';
 import { cn } from '@/lib/utils';
@@ -11,13 +11,13 @@ interface DayCardProps {
     dayName: string;
     exercises: ExerciseEntry[];
     isExpanded: boolean;
-    onToggleExpand: (day: number) => void;
-    onAddExercise: (day: number) => void;
-    onQuickAdd: (day: number) => void;
-    onEditExercise: (day: number, exercise: ExerciseEntry) => void;
-    onInlineSaveExercise?: (day: number, exercise: ExerciseEntry) => void;
-    onDeleteExercise: (day: number, id: string) => void;
-    onToggleComplete: (id: string, current: boolean) => void;
+    onToggleExpand: (dayNumber: number) => void;
+    onAddExercise: (dayNumber: number) => void;
+    onQuickAdd: (dayNumber: number) => void;
+    onEditExercise: (dayNumber: number, exercise: ExerciseEntry) => void;
+    onInlineSaveExercise?: (dayNumber: number, exercise: ExerciseEntry) => void;
+    onDeleteExercise: (dayNumber: number, exerciseId: string) => void;
+    onToggleComplete: (exerciseId: string, currentState: boolean) => void;
 }
 
 export default function DayCard({

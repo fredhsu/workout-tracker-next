@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
 interface FileUploadProps {
-  onFileUpload: (content: string) => void;
+  onFileUpload: (fileContent: string) => void;
   accept?: string;
   buttonText?: string;
   maxSize?: number; // in MB
@@ -59,7 +59,7 @@ export default function FileUpload({
         // Check if valid JSON
         JSON.parse(content);
         onFileUpload(content);
-      } catch (error) {
+      } catch (_error) {
         setError('Invalid JSON file');
       }
     };

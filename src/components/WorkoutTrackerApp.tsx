@@ -183,7 +183,7 @@ export default function WorkoutTrackerApp(): React.JSX.Element {
         dayNumber: day,
         exercises: exercises.map(({ ...rest }: any) => {
           // Remove id and workoutId if they exist to avoid issues with the API
-          const { id, workoutId, ...cleanExercise } = rest;
+          const { id: _id, workoutId: _workoutId, ...cleanExercise } = rest;
           return cleanExercise;
         })
       };

@@ -14,10 +14,10 @@ import { Input } from '@/components/ui/input';
 interface ExerciseItemProps {
     exercise: ExerciseEntry;
     isCompleted: boolean;
-    onToggleComplete: (id: string) => void;
-    onEdit: (exercise: ExerciseEntry) => void;
-    onInlineSave?: (exercise: ExerciseEntry) => void;
-    onDelete: (id: string) => void;
+    onToggleComplete: (exerciseId: string) => void;
+    onEdit: (updatedExercise: ExerciseEntry) => void;
+    onInlineSave?: (updatedExercise: ExerciseEntry) => void;
+    onDelete: (exerciseId: string) => void;
 }
 
 export default function ExerciseItem({

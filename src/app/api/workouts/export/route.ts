@@ -55,7 +55,7 @@ export async function GET(request: NextRequest) {
       const { dayNumber, exercises } = workout;
       
       // Format exercises to match import format (omitting workoutId and timestamps)
-      const formattedExercises = exercises.map(({ id, name, sets, reps, weight, note }) => ({
+      const formattedExercises = exercises.map(({ id: _id, name, sets, reps, weight, note }) => ({
         name,
         sets,
         reps,

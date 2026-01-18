@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 
 interface FormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   value: string;
-  onValueChange: (value: string) => void;
+  onValueChange: (newValue: string) => void;
 }
 
 /**

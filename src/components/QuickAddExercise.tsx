@@ -8,7 +8,7 @@ import { Plus, X, Zap } from 'lucide-react';
 import { ExerciseEntry } from '@/lib/types';
 
 interface QuickAddExerciseProps {
-  onAddExercise: (exercise: ExerciseEntry) => void;
+  onAddExercise: (newExercise: ExerciseEntry) => void;
   onClose: () => void;
 }
 

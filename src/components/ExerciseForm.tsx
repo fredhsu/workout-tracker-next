@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, FormEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -34,23 +34,6 @@ export default function ExerciseForm({
   const [formData, setFormData] = useState<ExerciseEntry>(
     exercise ? { ...exercise } : defaultExercise
   );
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    
-    if (name === 'sets') {
-      // Convert to number for sets field
-      setFormData({
-        ...formData,
-        [name]: parseInt(value) || 1 // Default to 1 if invalid input
-      });
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value
-      });
-    }
-  };
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
